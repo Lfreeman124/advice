@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --Cyan: hsl(193, 38%, 86%);
+  --Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+Html {
+  font-size: 1.8rem;
+  font-family: "Manrope";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--Dark-Blue);
+  padding: 15rem 2rem;
+}
+
+main {
+  padding-top: 4rem;
+  text-align: center;
+  background: var(--Dark-Grayish-Blue);
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  letter-spacing: 2px;
+  color: var(--Green);
+  font-size: 1rem;
+  display: flex;
+}
+
+h2 {
+  margin: 3rem 0 12rem;
+  color: var(--Cyan);
+  font-size: 2.5rem;
+}
+
+.divider {
+  position: absolute;
+  bottom: 7rem;
+}
+
+button {
+  background-color: var(--Green);
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  bottom: -3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    padding: 3rem;
+    margin: 0 auto;
+    height: auto;
+    width: 60rem;
+  }
+
+  button:hover {
+    box-shadow: 0 0 4rem var(--Green);
+  }
+}
