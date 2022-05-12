@@ -28,7 +28,7 @@ body {
 }
 
 main {
-  padding-top: 4rem;
+  padding: 4rem 3rem 0;
   text-align: center;
   background: var(--Dark-Grayish-Blue);
   border-radius: 10px;
@@ -74,7 +74,7 @@ button {
 
 @media only screen and (min-width: 600px) {
   main {
-    padding: 3rem 5rem;
+    padding: 3rem;
     margin: 0 auto;
     height: auto;
     width: 60rem;
